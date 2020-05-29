@@ -20,13 +20,16 @@
         width="3" 
         height="1" 
         depth="1" 
-        material="src: #wood"
+        color="green"
         shadow 
         animation="property: rotation; 
                    to: 20 390 140; 
-                   dur: 20000; 
+                   dur: 900; 
                    easing: linear; 
-                   loop: true" >
+                   loop: true;
+    "
+    animation="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500"; >
+
       </a-box>
       <a-box id="myOtherBox" 
         position="2 1 -3" 
@@ -34,7 +37,7 @@
         width="3" 
         height="1" 
         depth="1" 
-        material="src: #wood2"
+        color="yellow"
         shadow>  
       </a-box>
       <a-plane id="ground"
